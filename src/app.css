@@ -1,0 +1,140 @@
+/* GLOBAL STYLE */
+
+html{
+    background: linear-gradient(6deg, #0F0F11, #262626);
+    min-height: 100vh;
+}
+
+
+*{
+    color: white;
+    font-family: "Inter";
+}
+
+h1,h2,h3,h4{
+    font-family: "Mate SC";
+}
+
+a{
+    text-decoration: none;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    padding-top: 60px;
+    width: 80%;
+}
+
+.menu .logo{
+    margin-right: 50px;
+}
+
+.menu .links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu .links a{
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px 0;
+    font-family: "Mate SC";
+    font-size: 20px;
+}
+
+.menu .links a:after{
+    content: "";
+    display: block;
+    background-color: #FFCB13;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.2s ease-in;
+}
+
+.menu .links a.selected:after{
+    left: 0;
+}
+
+/* CONTENT */
+
+main{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2.title{
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    color: #505050;
+    font-size: 13.5vw;
+    font-weight: 100;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.content .left-col{
+    width: 37.5%;
+    position: relative;
+}
+
+.content .img{
+    display: block;
+    transform: translateY(0);
+}
+
+.content .infos{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+
+.content .infos p{
+    margin: 0;
+    line-height: 19px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.content .right-col{
+    width: 57.5%;
+}
+
+.content .description{
+    padding-top: 185px;
+    font-size: 17px;
+}
+
+.content .description p{
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.content .submit{
+    background-color: #FFCB13;
+    color: black;
+    font-size: 17px;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: none;
+}
